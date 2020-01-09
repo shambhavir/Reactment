@@ -6,7 +6,6 @@ class App extends Component {
     state = {}
     constructor(props) {
         super(props);
-        console.log("Hello from the constructor!");
     }
     render() {
         return (
