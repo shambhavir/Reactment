@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Fade from 'react-reveal/Fade';
 import strings from "./strings.json";
 import "./style.css";
 
@@ -9,9 +10,11 @@ class App extends Component {
     }
     render() {
         return (
-            <div className="greeting">
+            <Fade>
+              <div className="greeting">
                 {strings.greeting}
-            </div>
+              </div>
+            </Fade>
         );
     }
 }
