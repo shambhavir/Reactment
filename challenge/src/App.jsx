@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Fade from 'react-reveal/Fade';
+import Nav from './Nav';
 import strings from "./strings.json";
 import "./style.css";
 
@@ -9,15 +10,26 @@ class App extends Component {
         super(props);
     }
     render() {
+        const github = "https://github.com/HackRU/Reactment";
+
+        const navEntries = [
+            ["Home", window.location.href],
+            ["GitHub", github]
+        ];
+
         return (
-            <Fade>
-              <div className="greeting">
-                {strings.greeting}
-              </div>
-              <a className="github" href="https://github.com/HackRU/Reactment">
-                {strings.github}
-              </a>
-            </Fade>
+            <>
+              <Nav entries={navEntries}>
+              </Nav>
+              <Fade>
+                <div className="greeting">
+                  {strings.greeting}
+                </div>
+                <a className="github" href={github}>
+                  {strings.github}
+                </a>
+              </Fade>
+            </>
         );
     }
 }
