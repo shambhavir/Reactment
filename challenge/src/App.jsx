@@ -10,6 +10,8 @@ class App extends Component {
         super(props);
     }
     render() {
+        console.log('Am I even rendering?');
+
         const github = "https://github.com/HackRU/Reactment";
 
         const navEntries = [
