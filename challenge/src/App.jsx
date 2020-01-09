@@ -14,6 +14,9 @@ class App extends Component {
               <div className="greeting">
                 {strings.greeting}
               </div>
+              <a className="github" href="https://github.com/HackRU/Reactment">
+                {strings.github}
+              </a>
             </Fade>
         );
     }
