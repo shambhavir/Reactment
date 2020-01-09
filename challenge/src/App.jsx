@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import strings from "./strings.json";
+import "./style.css";
 
 class App extends Component {
     state = {}
@@ -9,7 +10,7 @@ class App extends Component {
     }
     render() {
         return (
-            <div style={{ width: "100%", height: "100%", textAlign: "center" }}>
+            <div className="greeting">
                 {strings.greeting}
             </div>
         );
