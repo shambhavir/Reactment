@@ -10,10 +10,11 @@ html, body, #root {
     align-items: center;
     background-color: #003153;
     color: #eee;
+    font-family: 'Roboto', sans-serif;
 }
 
 a {
-   font-weight: bold;
+   font-weight: light;
    color: #fff;
    text-decoration: none;
 }
